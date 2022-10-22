@@ -1,7 +1,4 @@
-#![allow(dead_code)]
-#![allow(unused_variables)]
-#![allow(unused_imports)]
-#![allow(unused_mut)]
+#![allow(dead_code)] // TODO: Remove in the future
 
 use inquire::Select;
 use inquire::Text;
@@ -113,7 +110,7 @@ fn repair(broken_section: String, station: &mut Station) {
     station.sections[broken_index].active = true;
 }
 
-fn science(working_section: String, station: &mut Station) {
+fn science(_working_section: String, station: &mut Station) {
     station.break_something();
 }
 
